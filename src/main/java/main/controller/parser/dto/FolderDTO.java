@@ -24,12 +24,4 @@ public class FolderDTO {
         files = new ArrayList<>();
     }
 
-//    @JsonCreator
-//    public FolderDTO(@JsonProperty("name") String name,
-//                     @JsonProperty("folders") ArrayList<FolderDTO> folders,
-//                     @JsonProperty("files") ArrayList<FileDTO> files){
-//        this.name = name;
-//        this.folders = folders;
-//        this.files = files;
-//    }
 }

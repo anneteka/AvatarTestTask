@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 @RestController
 public class InputController {
@@ -42,11 +43,16 @@ public class InputController {
     }
 
     private void insertData(FolderDTO folder) {
-        folderService.save(new FolderEntity(folder.getPath()));
+//        try {
+            folderService.save(new FolderEntity(folder.getPath()));
+//        }
+//        catch (Exception e){
+//
+//        }
         int current = folderService.findByPath(folder.getPath()).get().getId();
 
         for (FileDTO file : folder.getFiles()) {
-            FileEntity insertion = new FileEntity(file.getName(), file.getMime_type(), file.getSize(), current);
+            FileEntity insertion = new FileEntity(file.getName(), file.getMimeType(), file.getSize(), current);
             fileService.save(insertion);
         }
 

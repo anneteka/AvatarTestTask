@@ -3,12 +3,12 @@
   "files": [
     {
       "name": "image1.gif",
-      "mime_type": "image/jpeg",
+      "mimeType": "image/jpeg",
       "size": "13406"
     },
     {
       "name": "image2.gif",
-      "mime_type": "image/gif",
+      "mimeType": "image/gif",
       "size": "3410"
     }
   ],
@@ -18,12 +18,12 @@
       "files": [
         {
           "name": "image3.jpg",
-          "mime_type": "image/jpeg",
+          "mimeType": "image/jpeg",
           "size": "33756"
         },
         {
           "name": "image4.png",
-          "mime_type": "image/png",
+          "mimeType": "image/png",
           "size": "10024"
         }
       ],
@@ -33,7 +33,7 @@
           "files": [
             {
               "name": "readme1.txt",
-              "mime_type": "text/plain",
+              "mimeType": "text/plain",
               "size": "511"
             }
           ]
@@ -43,15 +43,14 @@
         },
         {
           "name": "SubFolder_3"
-        }
-      ]
+        }]
     },
     {
       "name": "Folder_2",
       "files": [
         {
           "name": "document1.doc",
-          "mime_type": "application/msword",
+          "mimeType": "application/msword",
           "size": "27301"
         }
       ]
